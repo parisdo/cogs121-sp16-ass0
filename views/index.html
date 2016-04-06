@@ -11,7 +11,7 @@
     	Content: <textarea name="content"></textarea><br>
     	<input type="submit" value="Submit">
     </form>
-    {{#if data}}
+    {{#if posts}}
     <h3>My Messages</h3>
     <table>
     	<thead>
@@ -20,7 +20,7 @@
     		<th>Date</th>
     	</thead>
     	<tbody>
-    		{{#each data}}
+    		{{#each posts}}
     		<tr>
     			<td>{{email}}</td>
     			<td>{{content}}</td>
